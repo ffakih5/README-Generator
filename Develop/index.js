@@ -4,6 +4,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+
 //from Homework activity example
 inquirer
 .prompt(questions[
@@ -13,11 +14,16 @@ inquirer
     name: "title",
     }
 ]) 
+//response
 .then((response) =>
     response.confirm === response.password
       ? console.log('Success!')
       : console.log('You forgot your password already?!')
   );
+  //writing file; need const= writeFile()
+  fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
+  err ? console.log(err) : console.log('Success!')
+);
 
 console.log(questions);
 // TODO: Create an array of questions for user input
