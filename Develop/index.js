@@ -1,10 +1,23 @@
 // TODO: Include packages needed for this application
-"inquirer"
 const inquirer = require('inquirer');
 
 
+//from Homework activity example
+inquirer
+.prompt([
+    
+    {type: "input",
+    name: "title",
+    message: "what is your project?"
+    }
+
+]
+
+)
 // TODO: Create an array of questions for user input
+
 const questions = [];
+//title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
