@@ -11,6 +11,12 @@ inquirer
     name: "title",
     }
 ]) 
+.then((response) =>
+    response.confirm === response.password
+      ? console.log('Success!')
+      : console.log('You forgot your password already?!')
+  );
+
 console.log(questions);
 // TODO: Create an array of questions for user input
 
