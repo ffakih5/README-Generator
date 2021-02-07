@@ -1,8 +1,9 @@
 // npm init -y. (install the)
-// npm i inquirer --save.
+// npm i inquirer --save. commands to make all work and 
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = //markdownfilepath
 
 
 //from Homework activity example
