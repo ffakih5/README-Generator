@@ -6,6 +6,8 @@ const fs = require('fs');
 const markdown = require('./utils/generateMarkdown.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 //const const util = require('util');
+//create writeFile function using promises instead of a callback function
+const writeFileAsync = util.promisify(fs.writeFile);
 
 const questions = [
     {
@@ -91,23 +93,22 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(function(data){
+    .then((data) =>{
         writeToFile("README-GENERATOR", generateMarkdown(data));
-    })
+    });
 
-//nOT USING THIS RIGHT NOW
-// async function asyncCall() {
+
+  }
+  
+    //asyncCall(); 
+    //async call is function init();
+    //nOT USING THIS RIGHT NOW
+    // async function asyncCall() {
     //console.log('calling');
     //const result = await resolveAfter2Seconds();
     //console.log(result);
     // expected output: "resolved"
-  }
-  
-  //asyncCall(); 
-  //async call is function init();
 
 // Function call to initialise the program  
 init();
 
-//create writeFile function using promises instead of a callback function
-const writeFileAsync = util.promisify(fs.writeFile);
