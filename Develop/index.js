@@ -6,8 +6,6 @@ const fs = require('fs');
 const markdown = require('./utils/generateMarkdown.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// need to add username, email and link to github
-
 const questions = [
     {
         type: "input",
@@ -102,6 +100,5 @@ function init() {
   //asyncCall(); 
   //async call is function init();
 
-// Function call to initialize app
-//this goes last; makes everything on the page run
+
 init();
