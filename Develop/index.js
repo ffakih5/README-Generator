@@ -71,25 +71,18 @@ function writeToFile(fileName, data) {
 }
 
 //from Homework activity example
-inquirer
-.prompt(questions[
+// TODO: Create a function to initialize app
+// here the other functions including questions.response will be input 
+function init() {
+    inquirer
+    .prompt(questions[
     {
     type: "input",
     message: "what is your project?",
     name: "title",
     }
 ]) 
-//response
-.then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
-  );
-  
-
-// TODO: Create a function to initialize app
-// here the other functions including questions.response will be input 
-function init() {}
+}
 
 //
 async function asyncCall() {
