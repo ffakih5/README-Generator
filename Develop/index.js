@@ -34,8 +34,15 @@ const questions = [
 
     },
     {
-        type: "input",
-        message: "Please provide the licenses to badges",
+        type: "checkbox",
+        message: "Please from the list of licenses",
+        choices:[
+            "MIT",
+            "Apache",
+            "BSD",
+            "ISC",
+
+        ],
         name: "license",
 
     },
@@ -80,9 +87,7 @@ function writeToFile(fileName, data) {
 
 }
 
-//from Homework activity example
 // TODO: Create a function to initialize app
-// here the other functions including questions.response will be input 
 function init() {
     inquirer.prompt(questions)
     .then(function(data){
@@ -100,5 +105,5 @@ function init() {
   //asyncCall(); 
   //async call is function init();
 
-
+// Function call to initialise the program  
 init();
