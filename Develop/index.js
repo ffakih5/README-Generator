@@ -61,8 +61,6 @@ const questions = [
     }
 
 ];
-//create the array then call on it instead of listing all the questions in .prompt/ test if both work. 
-//title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -87,7 +85,6 @@ inquirer
       ? console.log('Success!')
       : console.log('You forgot your password already?!')
   );
-  //writing file; need const= writeFile()
   
 
 // TODO: Create a function to initialize app
