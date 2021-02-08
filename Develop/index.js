@@ -55,7 +55,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "",
+        message: "Please feel free to create an issue should you have any questions",
         name: "questions",
 
     },
@@ -67,7 +67,7 @@ const questions = [
     },
     {   type: "input",
         message: "What is your email address?",
-        name: "emailAddress",
+        name: "Email",
 
     }
 
@@ -75,10 +75,10 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, (data), function(err){
+    fs.writeFile(fileName, (data), (err) =>
         err ? console.log(err) : console.log("Success!")
 
-    })
+    )
 
 }
 
@@ -99,7 +99,7 @@ function init() {
     // expected output: "resolved"
   }
   
-  asyncCall(); 
+  //asyncCall(); 
   //async call is function init();
 
 // Function call to initialize app
