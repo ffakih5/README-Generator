@@ -1,6 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -14,25 +16,38 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  [![GitHub] (link goes here ) ]
+GitHub: [${data.userName}] (https://github.com/ffakih5) 
+Email: [${data.Email}] (https://github.com/ffakih5) 
 
-  # Description
+# Description
 
-  ${data.Description}
+${data.Description}
 
-  # Table of Contents
+# Table of Contents
 
-  *[Installation](#installaion)
+*[Installation](#installaion)
 
-  *[Usage](#usage)
+*[Usage](#usage)
 
-  *[License](#license)
+*[License](#license)
 
-  *[Contributing](#contributing)
+*[Contributing](#contributing)
 
-  *[Tests](#tests)
+*[Tests](#tests)
 
-  *[Questions](#questions)
+*[Questions](#questions)
+
+# Installation 
+
+Dependencies must be installed to run the application: ${data.Installation}
+
+# Usage
+
+This application is used for: ${data.Usage}
+
+# License
+
+
 
 
 `;
