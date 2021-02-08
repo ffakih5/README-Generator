@@ -3,7 +3,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdown = //markdownfilepath
+const markdown = require('./utils/generateMarkdown.js');
 
 
 //from Homework activity example
@@ -80,9 +80,6 @@ const questions = [
         name: "questions",
 
     }
-
-
-
 
 ];
 //create the array then call on it instead of listing all the questions in .prompt/ test if both work. 
