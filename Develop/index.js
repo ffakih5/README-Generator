@@ -35,6 +35,13 @@ const questions = [
         message: "what is your project?",
         name: "title",
     },
+    {   type: "input",
+        message: "provide a desription for your project ",
+        name: "title",
+        
+    }
+
+
 
 
 ];
