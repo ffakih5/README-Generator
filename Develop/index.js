@@ -36,9 +36,49 @@ const questions = [
         name: "title",
     },
     {   type: "input",
-        message: "provide a desription for your project ",
-        name: "title",
+        message: "provide a desription for your project",
+        name: "description",
         
+    },
+    {   type: "input",
+        message: "",
+        name: "table of contents ",
+
+    },
+    {   type: "input",
+        message: "",
+        name: "installation",
+
+    },
+    {
+        type: "input",
+        message: "",
+        name: "usage",
+
+    },
+    {
+        type: "input",
+        message: "",
+        name: "license",
+
+    },
+    {
+        type: "input",
+        message: "",
+        name: "contributing",
+
+    },
+    {
+        type: "input",
+        message: "",
+        name: "tests",
+
+    },
+    {
+        type: "input",
+        message: "",
+        name: "questions",
+
     }
 
 
