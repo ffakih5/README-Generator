@@ -4,6 +4,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const markdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // need to add username, email and link to github
 
@@ -74,9 +75,10 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), (err) =>
-    err ? console.log(err) : console.log('Success!')
-    );
+    fs.writeFile(fileName, (data), function(err){
+        err ? console.log(err) : console.log("Success!")
+
+    })
 
 }
 
@@ -85,12 +87,15 @@ function writeToFile(fileName, data) {
 // here the other functions including questions.response will be input 
 function init() {
     inquirer.prompt(questions)
+    .then(function(data){
+        writeToFile("README-GENERATOR", generateMarkdown(data));
+    })
 
-//
-async function asyncCall() {
-    console.log('calling');
-    const result = await resolveAfter2Seconds();
-    console.log(result);
+//nOT USING THIS RIGHT NOW
+// async function asyncCall() {
+    //console.log('calling');
+    //const result = await resolveAfter2Seconds();
+    //console.log(result);
     // expected output: "resolved"
   }
   
