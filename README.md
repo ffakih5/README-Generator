@@ -1,3 +1,2 @@
 # README-Generator
-![MIT license](https://img.shields.io/badge/License-MIT.)
-
+<img alt="APM" src="https://img.shields.io/apm/l/licenseMIT">
