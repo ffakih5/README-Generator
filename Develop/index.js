@@ -30,7 +30,7 @@ const questions = [
         message: "Link to deployed page",
         name: "deployedPage",
 
-    }
+    },
     {   type: "input",
         message: "Key in a list for table of contents",
         name: "table of contents ",

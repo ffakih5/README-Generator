@@ -6,11 +6,11 @@ function generateMarkdown(data) {
 [![${data.license}](https://img.shields.io/badge/License-${data.license}-MIT.)](https://opensource.org/licenses/${data.license})
    
 GitHub: [${data.userName}] (https://github.com/ffakih5) 
-Email: [${data.Email}] (https://github.com/ffakih5) 
+Email: [${data.email}] (https://github.com/ffakih5) 
 
 ## Description
 
-${data.Description}
+${data.description}
 
 [Check it out here!] (${data.deployedPage})
 
