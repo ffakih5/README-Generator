@@ -3,11 +3,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdown = require('./utils/generateMarkdown.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-//const const util = require('util');
-//create writeFile function using promises instead of a callback function
-const writeFileAsync = util.promisify(fs.writeFile);
 
 const questions = [
     {   
@@ -85,7 +81,6 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, (data), (err) =>
         err ? console.log(err) : console.log("README is Here!")
@@ -94,7 +89,6 @@ function writeToFile(fileName, data) {
 
 }
 
-// TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((data) =>{
@@ -104,15 +98,5 @@ function init() {
 
   }
   
-    //asyncCall(); 
-    //async call is function init();
-    //nOT USING THIS RIGHT NOW
-    // async function asyncCall() {
-    //console.log('calling');
-    //const result = await resolveAfter2Seconds();
-    //console.log(result);
-    // expected output: "resolved"
-
-// Function call to initialise the program  
 init();
 
