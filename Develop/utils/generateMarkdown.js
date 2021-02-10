@@ -19,35 +19,45 @@ function generateMarkdown(data) {
 GitHub: [${data.userName}] (https://github.com/ffakih5) 
 Email: [${data.Email}] (https://github.com/ffakih5) 
 
-# Description
+## Description
 
 ${data.Description}
 
-# Table of Contents
+## Table of Contents
 
-*[Installation](#installaion)
+* [Installation](#installaion)
 
-*[Usage](#usage)
+* [Usage](#usage)
 
-*[License](#license)
+* [License](#license)
 
-*[Contributing](#contributing)
+* [Contributing](#contributing)
 
-*[Tests](#tests)
+* [Tests](#tests)
 
-*[Questions](#questions)
+* [Questions](#questions)
 
-# Installation 
+## Installation 
 
-Dependencies must be installed to run the application: ${data.Installation}
+Dependencies must be installed to run the application: ${data.installation}
 
-# Usage
+## Usage
 
-This application is used for: ${data.Usage}
+This application is used for: ${data.usage}
 
-# License
+## License
 
+This application is under the: ${data.license} license
 
+## Contribution
+
+Contributors: ${data.contributing}
+
+#Tests
+
+To run tests you need to run the following command 
+
+#Questions
 
 
 `;

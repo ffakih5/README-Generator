@@ -10,40 +10,58 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 const questions = [
+    {   
+        type: "input",
+        message: "Key in GitHub username",
+        name: "userName",
+
+    },
+    {   type: "input",
+        message: "Key in Email address",
+        name: "Email",
+
+    },
+
     {
         type: "input",
-        message: "What is your project?",
+        message: "Key in project title",
         name: "title",
     },
     {   type: "input",
-        message: "Please provide a desription for your project",
+        message: "Key in a desription of your project",
         name: "description",
         
     },
     {   type: "input",
-        message: "Please provide a list for table of contents",
+        message: "Link to deployed page",
+        name: "deployedPage",
+
+    }
+    {   type: "input",
+        message: "Key in a list for table of contents",
         name: "table of contents ",
 
     },
     {   type: "input",
-        message: "Please provide information on installation of this application",
+        message: "Key in information on installation of this application",
         name: "installation",
 
     },
     {
         type: "input",
-        message: "Please provide information for application usage",
+        message: "Key in information for application usage",
         name: "usage",
 
     },
     {
         type: "checkbox",
-        message: "Please from the list of licenses",
+        message: "Key in a selection from the list of licenses",
         choices:[
             "MIT",
             "Apache",
             "BSD",
             "ISC",
+            "NONE",
 
         ],
         name: "license",
@@ -51,33 +69,19 @@ const questions = [
     },
     {
         type: "input",
-        message: "Please provide information on any contributors",
+        message: "Key in any contributors",
         name: "contributing",
 
     },
     {
         type: "input",
-        message: "Please provide the required tests",
+        message: "command to run tests",
         name: "tests",
+        default: "npm test"
 
     },
-    {
-        type: "input",
-        message: "Please feel free to create an issue should you have any questions or contact me via Github",
-        name: "questions",
-
-    },
-    {   
-        type: "input",
-        message: "What is your GitHub username?",
-        name: "userName",
-
-    },
-    {   type: "input",
-        message: "What is your email address?",
-        name: "Email",
-
-    }
+  
+   
 
 ];
 
