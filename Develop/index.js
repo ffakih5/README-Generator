@@ -1,6 +1,4 @@
-// npm init -y. (install the)
-// npm i inquirer --save. commands to make all work and 
-// TODO: Include packages needed for this application
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
@@ -14,7 +12,7 @@ const questions = [
     },
     {   type: "input",
         message: "Key in Email address",
-        name: "Email",
+        name: "email",
 
     },
 
@@ -54,9 +52,6 @@ const questions = [
         message: "Key in a selection from the list of licenses",
         choices:[
             "MIT",
-            "Apache",
-            "BSD",
-            "ISC",
             "NONE",
 
         ],

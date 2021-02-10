@@ -1,27 +1,19 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
 
-}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+
   return `# ${data.title}
 
+[![${data.license}](https://img.shields.io/badge/License-${data.license}-MIT.)](https://opensource.org/licenses/${data.license})
+   
 GitHub: [${data.userName}] (https://github.com/ffakih5) 
 Email: [${data.Email}] (https://github.com/ffakih5) 
 
 ## Description
 
 ${data.Description}
+
+[Check it out here!] (${data.deployedPage})
+
 
 ## Table of Contents
 
@@ -36,6 +28,7 @@ ${data.Description}
 * [Tests](#tests)
 
 * [Questions](#questions)
+
 
 ## Installation 
 
@@ -53,12 +46,17 @@ This application is under the: ${data.license} license
 
 Contributors: ${data.contributing}
 
-#Tests
+## Tests
 
 To run tests you need to run the following command 
 
-#Questions
+## Questions
 
+If you have any questions, please reach out to me.
+
+* Email : ${data.email}
+
+*GitHub : (https://github.com/${data.userName})
 
 `;
 }
