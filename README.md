@@ -8,7 +8,7 @@
 
 ![README.md output image](../assets/OutputScreenshot.png)
 
-## [Check it out here! (https://ffakih5.github.io/README-Generator/)]
+## Check it out here! https://ffakih5.github.io/README-Generator/
 
 
 ## Table of Contents
